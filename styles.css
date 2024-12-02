@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout Styles */
+body, html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.gap{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-spacing: 25px;
+}
+
+/* Header */
+#main-header {
+    background-color: rgb(129, 129, 184);
+    height: 80px;
+    color: black;
+    position: fixed;
+    top: 50;
+    width: 100%;
+    z-index: 1000;
+}
+.emp-details{
+    margin-top: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 25px;
+}
+.btn{
+    background-color: rgb(25, 12, 12);
+    color: white;
+    height: 25px;
+    width: 85px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.employee-list{
+    display: flex;
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-spacing: 25px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+#menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+#hamburger {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+}
+/* Footer */
+#main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
